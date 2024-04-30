@@ -26,7 +26,7 @@ services:
     environment:
       JUPYTER_TOKEN: roma
     volumes:
-      - jupyter-data:/home/jovyan/work
+      - ./jupyter:/home/jovyan/work
     ports:
       - "8888:8888"
     networks:
